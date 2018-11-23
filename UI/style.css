@@ -1,0 +1,200 @@
+         .navbar {
+         position: fixed;
+         box-sizing: border-box;
+         justify-content: space-between;
+         background-color: #0c88c2;
+         top: 0px;
+         left: 0px;
+         z-index: 1000000;
+         height: 60px;
+         min-height: 50px;
+         margin-bottom: 20px;
+         width: 100%;
+         border-width: 0 0 1px;
+         border: 1px solid transparent;
+         font-family: Arial, Helvetica, sans-serif;
+     }
+     
+     .main {
+         display: block;
+         padding-top: 50px;
+     }
+     /* Logo and search */
+     
+     .navbar>a {
+         float: left;
+         display: inline;
+         color: black;
+         text-decoration: none;
+         padding-top: 10px;
+         padding-right: 20px;
+     }
+     
+     .navbar>.logo>h1 {
+         margin-top: 5px;
+         margin-left: 40px;
+         padding-top: -20px;
+         display: inline;
+     }
+     
+     .navbar .search {
+         width: 300px;
+         height: 30px;
+         padding: 0px 15px;
+         margin-left: 40px;
+         padding-left: 10px;
+         border-radius: 15px;
+         display: inline;
+     }
+     
+     i {
+         display: inline;
+     }
+     
+     .fa-search:before {
+         font-family: 'FontAwesome';
+         color: grey;
+         position: relative;
+         left: -25px;
+     }
+     /* Right Navigation bar */
+     
+     .rightnav {
+         float: right;
+         display: inline;
+         text-align: center;
+         /* padding: 6px 10px; */
+         padding: 14px 10px;
+         text-decoration: none;
+         text-transform: uppercase;
+     }
+     
+     .rightnav>a,
+     .rightnav>.dropdown {
+         color: white;
+         font-size: 16px;
+         padding: 20px 0px;
+         padding-left: 10PX;
+         padding-right: 10px;
+         /* padding: 14px 16px; */
+         text-decoration: none;
+     }
+     /* Dropdown styling */
+     
+     .dropdown {
+         overflow: hidden;
+         display: inline;
+         /* padding: 14px 16px; */
+     }
+     
+     .dropdown .dropbtn {
+         font-size: 16px;
+         border: none;
+         outline: none;
+         color: white;
+         /* padding: 14px 16px; */
+         background-color: inherit;
+         font-family: inherit;
+         margin: 0;
+     }
+     
+     .dropdown-content {
+         display: block;
+         position: absolute;
+         margin-top: 20px;
+         background-color: #f9f9f9;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+         z-index: 1;
+     }
+     
+     .dropdown-content-remove {
+         display: none;
+     }
+     
+     .dropdown-content a {
+         float: none;
+         color: black;
+         font-size: 12px;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+         text-align: left;
+     }
+     
+     #myrecords-dropdwn {
+         margin-left: 20px;
+     }
+     
+     #create-dropdwn {
+         margin-left: 200px;
+     }
+     
+     .dropdown-content a:hover {
+         background-color: grey;
+     }
+     
+     .dropdown:hover .dropdown-content {
+         display: block;
+     }
+     
+     .rightnav .icon {
+         display: none;
+     }
+     /* Responsive settings */
+     
+     @media screen and (max-width: 1200px) {
+         .navbar>a {
+             padding-right: 2px;
+         }
+         .navbar .search {
+             padding: 0px 3px;
+             margin-left: 15px;
+             padding-left: 5px;
+             width: 250px;
+             height: 30px;
+         }
+         .navbar>.logo>h1 {
+             margin-left: 5px;
+             font-size: 30px;
+             width: 20px
+         }
+         .rightnav>a,
+         .rightnav>.dropdown {
+             padding-left: 3PX;
+             padding-right: 3px;
+         }
+         @media screen and (max-width: 1000px) {
+             .navbar .search {
+                 width: 250px;
+             }
+             .navbar>.logo>h1 {
+                 font-size: 25px;
+             }
+         }
+         @media screen and (max-width: 960px) {
+             .navbar .search {
+                 width: 200px;
+             }
+             .navbar>.logo>h1 {
+                 font-size: 20px;
+             }
+         }
+         @media screen and (max-width: 860px) {
+             .navbar .search {
+                 width: 250px;
+             }
+             .rightnav a:not(:last-child),
+             .rightnav div {
+                 float: none;
+                 display: none;
+             }
+             .rightnav .icon {
+                 padding-left: 10PX;
+                 float: right;
+                 display: block;
+                 position: absolute;
+                 right: 0;
+                 top: 0;
+             }
+         }

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>iReporter | Adabanya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!-- <meta name="author" content="chinedu"> -->
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- Header Navigation Bar -->
+    <header>
+
+        <div class="navContainer">
+            <!-- Logo -->
+            <div class="logo">
+                <h1>iReporter</h1>
+            </div>
+            <!-- Search box -->
+            <div>
+                <form action="" class="search_people">
+
+                    <input type="text" placeholder="search people">
+                    <input type="button" value="">
+                </form>
+            </div>
+
+            <!-- Navigation Bar -->
+            <div>
+                <nav>
+                    <ul>
+                        <li>home <span class="caret_dropdown1">caret</span></li>
+                        <li class="create_dropdown">create</li>
+                        <li>
+                            <a href=""><span>AC</span>
+                                            <span>Adabanya</span></a>
+                            <span class="caret_dropdown2">caret</span>
+                        </li>
+                    </ul>
+                    <!-- Dropdown contents -->
+                    <div class="homecaret_dropdown1_content">
+
+                        <a href="#"> Approved Records</a>
+                        <a href="#"> Under Investigation Records</a>
+                        <a href="#"> Rejected Records</a>
+                    </div>
+                    <div class="create_dropdown_content">
+                        <a href="#">Red-Flag</a>
+                        <a href="#">Intervention</a>
+                    </div>
+                    <div class="caret_dropdown2_content">
+                        <a href="#">My Records</a>
+                        <a href="#">Log Off</a>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+    <!-- User profile card -->
+    <aside>
+        <div>
+            <a href=""><img src="" alt=""></a>
+        </div>
+        <div>
+            <a href="">
+                <h4>Adabanya Chinedu</h4>
+            </a>
+            <p>User</p>
+        </div>
+    </aside>
+    <!-- Social media sticker -->
+    <div class="social_media">
+        <img src="" alt="facebook" />
+        <img src="" alt="twitter" />
+        <img src="" alt="LinkedIn" />
+    </div>
+
+    <!-- Record Status Indicators -->
+    <aside>
+        <ul>
+            <li><span id="approved_Indicator">4</span> Approved</li>
+            <li><span id="underInvestig_Indicator">5</span> Under Investigation</li>
+            <li><span id="rejected_Indicator">6</span> Rejected</li>
+        </ul>
+    </aside>
+
+    <!-- User Yet-to-be-approved records -->
+    <div class="record_Component">
+        <div>
+            <ul>
+                <li><img src="" alt="name"><span>Name</span></li>
+                <li><img src="" alt="time"><span>6 mins ago</span></li>
+                <li><img src="" alt="geolocation"><span>7'67</span></li>
+
+            </ul>
+        </div>
+        <div class="record_content">
+            <div class="record_Text"></div>
+            <div class="record_ImgVideo">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- user Approved, Under-investigation, Rejected records -->
+    <div class="record_Component">
+        <div>
+            <ul class="record_ComponentHeader">
+                <li><img src="" alt="name"><span>Name</span></li>
+                <li><img src="" alt="time"><span>6 mins ago</span></li>
+                <li><img src="" alt="geolocation"><span>7'67</span></li>
+                <li><a href=""><span class="fa fa-bars"></span></a></li>
+            </ul>
+            <div class="fa_dropdown2_content">
+                <a href="./editPage.html">Edit Record</a>
+                <a href="#">Delete Record</a>
+            </div>
+            <div class="delete_modal">
+                <div class="modalBox">
+                    <p>Are you sure you want to delete Record ?</p>
+                    <hr>
+                    <div id="buttonSet">
+                        <button class="okButton">OK</button>
+                        <button class="cancelButton">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="record_ComponentBody">
+            <div class="record_Text"></div>
+            <div class="record_ImgVideo">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="record_ComponentFooter">
+            <ul>
+                <li id="comments">
+
+                    <a href=""><img src="" alt="comment"></a>
+                    <span id="comments">Comment</span>
+                </li>
+                <li id="status">
+                    <span>Red</span>
+                    <span>Rejected</span>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
