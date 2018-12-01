@@ -1,0 +1,16 @@
+{
+    "name": "UI",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "deploy": "gh-pages -d UI"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://adabanyachinedu.github.io/iReporter",
+    "dependencies": {
+        "gh-pages": "^2.0.1"
+    }
+}

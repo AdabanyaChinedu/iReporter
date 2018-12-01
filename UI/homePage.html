@@ -15,105 +15,108 @@
 
 <body>
     <!-- Header Navigation Bar -->
-    <header class="navbar">
+
+    <div id="myTopnav" class="topnav">
         <!-- Logo -->
-        <a href="" class="logo">
-            <h1>iReporter</h1>
-        </a>
+        <a id="logo" href="homePage.html" class="logo">
+            iReporter </a>
         <!-- Search box -->
-        <a href="">
-            <form action="">
-                <input class="search" type="search" placeholder="search people" class="searchInput">
-                <i class="fas fa-search"></i>
-            </form>
-        </a>
-        <div class="rightnav">
-            <a href=""> HOME </a>
-            <div class="dropdown">
-                <button id="myrecords-btn" class="dropbtn" onclick="myrecordFunction()">MY RECORDS 
+
+        <form class="searchform" action="">
+            <input class="search" type="search" placeholder="search people">
+        </form>
+
+        <!-- Right Navigation -->
+
+        <a href="homePage.html"> HOME </a>
+        <!-- My Records Dropdown -->
+        <div class="dropdown">
+            <button id="myrecords-btn" class="dropbtn" onclick="myrecordFunction()">MY RECORDS 
                             <i class="fa fa-caret-down"></i>
                              </button>
-                <div id="myrecords-dropdwn" class="dropdown-content-remove">
-                    <a href="#">Recently Added</a>
-                    <a href="#"> Approved Records</a>
-                    <a href="#"> Under Investigation Records</a>
-                    <a href="#"> Rejected Records</a>
-                </div>
+            <div id="myrecords-dropdwn" class="dropdown-content">
+                <a href="#">Recently Added</a>
+                <a href="#"> Approved Records</a>
+                <a href="#"> Under Investigation Records</a>
+                <a href="#"> Rejected Records</a>
             </div>
-            <div class="dropdown">
-                <button id="create-btn" class="dropbtn" onclick="createFunction()">CREATE
+        </div>
+        <!-- Create Dropdown -->
+        <div class="dropdown">
+            <button id="create-btn" class="dropbtn" onclick="createFunction()">CREATE
                                 <i class="fa fa-caret-down"></i>
                                  </button>
-                <div id="create-dropdwn" class="dropdown-content-remove">
-                    <a href="#">Red-Flag</a>
-                    <a href="#">Intervention</a>
+            <div id="create-dropdwn" class="dropdown-content">
+                <a href="create_redflagRecord.html">Red-Flag</a>
+                <a href="create_interventionRecord.html">Intervention</a>
+            </div>
+        </div>
+
+        <a href="Userprofile.html"><span>img</span><span>Surname</span></a>
+        <a href="signIn.html">Sign Off</a>
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+    </div>
+
+
+    <div class="main">
+        <!-- modal
+        <div class="modal">
+            <div>
+                <p>
+                    Are you sure you want to Sign Off ?
+                </p>
+                <button>OK</button>
+                <button>Cancel</button>
+            </div>
+        </div> -->
+
+        <!-- User profile card -->
+        <aside>
+            <div>
+                <a href=""><img src="" alt=""></a>
+            </div>
+            <div>
+                <a href="">
+                    <h4>Adabanya Chinedu</h4>
+                </a>
+                <p>User</p>
+            </div>
+        </aside>
+        <!-- Social media sticker -->
+        <div class="social_media">
+            <img src="" alt="facebook" />
+            <img src="" alt="twitter" />
+            <img src="" alt="LinkedIn" />
+        </div>
+
+
+        <!-- User Approved record  -->
+        <div class="record_Component">
+            <div>
+                <ul>
+                    <li><img src="" alt="name"><span>Name</span></li>
+                    <li><img src="" alt="time"><span>6 mins ago</span></li>
+                    <li><img src="" alt="geolocation"><span>7'67</span></li>
+
+                </ul>
+            </div>
+            <div class="record_content">
+                <div class="record_Text"></div>
+                <div class="record_ImgVideo">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
             </div>
-
-            <a href=""><span>img</span><span>Surname</span></a>
-            <a href="">Sign Off</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-
-    </header>
-
-    <div class="modal">
-        <div>
-            <p>
-                Are you sure you want to Sign Off ?
-            </p>
-            <button>OK</button>
-            <button>Cancel</button>
-        </div>
-    </div>
-
-
-    <!-- User profile card -->
-    <aside>
-        <div>
-            <a href=""><img src="" alt=""></a>
-        </div>
-        <div>
-            <a href="">
-                <h4>Adabanya Chinedu</h4>
-            </a>
-            <p>User</p>
-        </div>
-    </aside>
-    <!-- Social media sticker -->
-    <div class="social_media">
-        <img src="" alt="facebook" />
-        <img src="" alt="twitter" />
-        <img src="" alt="LinkedIn" />
-    </div>
-
-
-    <!-- User Approved record  -->
-    <div class="record_Component">
-        <div>
-            <ul>
-                <li><img src="" alt="name"><span>Name</span></li>
-                <li><img src="" alt="time"><span>6 mins ago</span></li>
-                <li><img src="" alt="geolocation"><span>7'67</span></li>
-
-            </ul>
-        </div>
-        <div class="record_content">
-            <div class="record_Text"></div>
-            <div class="record_ImgVideo">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <div>
+                <a href=""><img src="" alt="comment"></a>
+                <span id="comments">Comment</span>
             </div>
-        </div>
-        <div>
-            <a href=""><img src="" alt="comment"></a>
-            <span id="comments">Comment</span>
-        </div>
 
+        </div>
     </div>
     <script src="main.js"></script>
 </body>

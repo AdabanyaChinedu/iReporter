@@ -13,48 +13,48 @@
 
 <body>
     <!-- Header Navigation Bar -->
-    <header>
-        <div class="container">
-            <!-- Logo -->
-            <div class="logo">
-                <h1>iReporter</h1>
+    <div id="myTopnav" class="topnav">
+        <!-- Logo -->
+        <a id="logo" href="" class="logo">
+                iReporter </a>
+        <!-- Search box -->
+
+        <form class="searchform" action="">
+            <input class="search" type="search" placeholder="search people">
+        </form>
+
+        <!-- Right Navigation -->
+
+        <a href=""> HOME </a>
+        <!-- My Records Dropdown -->
+        <div class="dropdown">
+            <button id="myrecords-btn" class="dropbtn" onclick="myrecordFunction()"> RECORDS 
+                                <i class="fa fa-caret-down"></i>
+                                 </button>
+            <div id="myrecords-dropdwn" class="dropdown-content">
+                <a href="#">Recently Added</a>
+                <a href="#"> Approved Records</a>
+                <a href="#"> Under Investigation Records</a>
+                <a href="#"> Rejected Records</a>
             </div>
-            <!-- Search Box -->
-            <form action="" class="search_people">
-
-                <input type="text" placeholder="search people">
-                <input type="button" value="">
-            </form>
-            <!-- Navigation Bar -->
-            <nav>
-                <ul>
-                    <li>home <span class="caret_dropdown">caret</span></li>
-                    <li> New Records</li>
-                    <li>
-                        <a href=""><span>AC</span>
-                        <span>Adabanya</span></a>
-                    </li>
-                    <li> Log Out</li>
-                </ul>
-
-                <div class="caret_dropdown_content">
-                    <a href="#">Rejected Records</a>
-                    <a href="#">UnderInvestigation Records</a>
-                    <a href="#">Approved Records</a>
-                </div>
-                <div class="logout_modal">
-                    <div class="modalBox">
-                        <p>Are you sure you want to LogOut ?</p>
-                        <hr>
-                        <div id="buttonSet">
-                            <button class="okButton">OK</button>
-                            <button class="cancelButton">Cancel</button>
-                        </div>
-                    </div>
-                </div>
-            </nav>
         </div>
-    </header>
+        <!-- Create Dropdown -->
+        <!-- <div class="dropdown">
+            <button id="create-btn" class="dropbtn" onclick="createFunction()">CREATE
+                                    <i class="fa fa-caret-down"></i>
+                                     </button>
+            <div id="create-dropdwn" class="dropdown-content">
+                <a href="#">Red-Flag</a>
+                <a href="#">Intervention</a>
+            </div> 
+        </div>-->
+
+        <a href="Userprofile.html"><span>img</span><span>Surname</span></a>
+        <a href="">Sign Off</a>
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+    </div>
     <!-- User profile card -->
     <aside>
         <div>
