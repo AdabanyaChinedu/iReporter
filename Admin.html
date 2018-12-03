@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>iReporter | Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!-- <meta name="author" content="chinedu"> -->
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- Header Navigation Bar -->
+    <div id="myTopnav" class="topnav">
+        <!-- Logo -->
+        <a id="logo" href="" class="logo">
+                iReporter </a>
+        <!-- Search box -->
+
+        <form class="searchform" action="">
+            <input class="search" type="search" placeholder="search people">
+        </form>
+
+        <!-- Right Navigation -->
+
+        <a href=""> HOME </a>
+        <!-- My Records Dropdown -->
+        <div class="dropdown">
+            <button id="myrecords-btn" class="dropbtn" onclick="myrecordFunction()"> RECORDS 
+                                <i class="fa fa-caret-down"></i>
+                                 </button>
+            <div id="myrecords-dropdwn" class="dropdown-content">
+                <a href="#">Recently Added</a>
+                <a href="#"> Approved Records</a>
+                <a href="#"> Under Investigation Records</a>
+                <a href="#"> Rejected Records</a>
+            </div>
+        </div>
+        <!-- Create Dropdown -->
+        <!-- <div class="dropdown">
+            <button id="create-btn" class="dropbtn" onclick="createFunction()">CREATE
+                                    <i class="fa fa-caret-down"></i>
+                                     </button>
+            <div id="create-dropdwn" class="dropdown-content">
+                <a href="#">Red-Flag</a>
+                <a href="#">Intervention</a>
+            </div> 
+        </div>-->
+
+        <a href="Userprofile.html"><span>img</span><span>Surname</span></a>
+        <a href="">Sign Off</a>
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+    </div>
+    <!-- User profile card -->
+    <aside>
+        <div>
+            <a href=""><img src="" alt=""></a>
+        </div>
+        <div>
+            <a href="">
+                <h4>Adabanya Chinedu</h4>
+            </a>
+            <p>Admin</p>
+        </div>
+    </aside>
+
+    <!-- Record Status Indicators -->
+    <aside>
+        <ul>
+            <li><span id="new_Indicator">434</span>New</li>
+            <li><span id="approved_Indicator">44</span> Approved</li>
+            <li><span id="underInvestig_Indicator">50</span> Under Investigation</li>
+            <li><span id="rejected_Indicator">60</span> Rejected</li>
+        </ul>
+    </aside>
+
+    <!-- user Approved, Under-investigation, Rejected records -->
+    <div class="record_Component">
+        <div>
+            <ul class="record_ComponentHeader">
+                <li><img src="" alt="name"><span>Name</span></li>
+                <li><img src="" alt="time"><span>6 mins ago</span></li>
+                <li><img src="" alt="geolocation"><span>7'67</span></li>
+            </ul>
+
+
+        </div>
+
+        <div class="record_ComponentBody">
+            <div class="record_Text"></div>
+            <div class="record_ImgVideo">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="record_ComponentFooter">
+            <div class="checkBoxGroup">
+                <label for="rejectCheckBox">Reject</label> <input type="checkbox" id="rejectCheckBox" value="">
+                <label for="underInvestiCheckBox">Under Investigation</label><input type="checkbox" id="underInvestiCheckBox" value="">
+                <label for="approveCheckBox">Approve</label><input type="checkbox" id="approveCheckBox" value="">
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

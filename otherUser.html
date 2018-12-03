@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>iReporter | Adabanya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!-- <meta name="author" content="chinedu"> -->
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- Header Navigation Bar -->
+    <div id="myTopnav" class="topnav">
+        <!-- Logo -->
+        <a id="logo" href="homePage.html" class="logo">
+                iReporter </a>
+        <!-- Search box -->
+
+        <form class="searchform" action="">
+            <input class="search" type="search" placeholder="search people">
+        </form>
+
+        <!-- Right Navigation -->
+
+        <a href="homePage.html"> HOME </a>
+        <!-- My Records Dropdown -->
+        <div class="dropdown">
+            <button id="myrecords-btn" class="dropbtn" onclick="myrecordFunction()">MY RECORDS 
+                                <i class="fa fa-caret-down"></i>
+                                 </button>
+            <div id="myrecords-dropdwn" class="dropdown-content">
+                <a href="#">Recently Added</a>
+                <a href="#"> Approved Records</a>
+                <a href="#"> Under Investigation Records</a>
+                <a href="#"> Rejected Records</a>
+            </div>
+        </div>
+        <!-- Create Dropdown -->
+        <div class="dropdown">
+            <button id="create-btn" class="dropbtn" onclick="createFunction()">CREATE
+                                    <i class="fa fa-caret-down"></i>
+                                     </button>
+            <div id="create-dropdwn" class="dropdown-content">
+                <a href="create_redflagRecord.html">Red-Flag</a>
+                <a href="create_interventionRecord.html">Intervention</a>
+            </div>
+        </div>
+
+        <a href="Userprofile.html"><span>img</span><span>Surname</span></a>
+        <a href="signIn.html">Sign Off</a>
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+    </div>
+    <div id="myTopnav" class="topnav">
+        <!-- Logo -->
+        <a id="logo" href="homePage.html" class="logo">
+            iReporter </a>
+        <!-- Search box -->
+
+        <form class="searchform" action="">
+            <input class="search" type="search" placeholder="search people">
+        </form>
+
+        <!-- Right Navigation -->
+
+        <a href="homePage.html"> HOME </a>
+        <!-- My Records Dropdown -->
+        <div class="dropdown">
+            <button id="myrecords-btn" class="dropbtn" onclick="myrecordFunction()">MY RECORDS 
+                            <i class="fa fa-caret-down"></i>
+                             </button>
+            <div id="myrecords-dropdwn" class="dropdown-content">
+                <a href="#">Recently Added</a>
+                <a href="#"> Approved Records</a>
+                <a href="#"> Under Investigation Records</a>
+                <a href="#"> Rejected Records</a>
+            </div>
+        </div>
+        <!-- Create Dropdown -->
+        <div class="dropdown">
+            <button id="create-btn" class="dropbtn" onclick="createFunction()">CREATE
+                                <i class="fa fa-caret-down"></i>
+                                 </button>
+            <div id="create-dropdwn" class="dropdown-content">
+                <a href="create_redflagRecord.html">Red-Flag</a>
+                <a href="create_interventionRecord.html">Intervention</a>
+            </div>
+        </div>
+
+        <a href=""><span>img</span><span>Surname</span></a>
+        <a href="signIn.html">Sign Off</a>
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+    </div>
+    <!-- User profile card -->
+    <aside>
+        <div>
+            <a href=""><img src="" alt=""></a>
+        </div>
+        <div>
+            <a href="">
+                <h4>Adabanya Chinedu</h4>
+            </a>
+            <p>User</p>
+        </div>
+    </aside>
+    <!-- Social media sticker -->
+    <div class="social_media">
+        <img src="" alt="facebook" />
+        <img src="" alt="twitter" />
+        <img src="" alt="LinkedIn" />
+    </div>
+
+    <!-- Record Status Indicators -->
+    <aside>
+        <ul>
+            <li><span id="approved_Indicator">4</span> Approved</li>
+            <li><span id="underInvestig_Indicator">5</span> Under Investigation</li>
+            <li><span id="rejected_Indicator">6</span> Rejected</li>
+        </ul>
+    </aside>
+
+    <!-- User Approved record  -->
+    <div class="record_Component">
+        <div>
+            <ul>
+                <li><img src="" alt="name"><span>Name</span></li>
+                <li><img src="" alt="time"><span>6 mins ago</span></li>
+                <li><img src="" alt="geolocation"><span>7'67</span></li>
+
+            </ul>
+        </div>
+        <div class="record_content">
+            <div class="record_Text"></div>
+            <div class="record_ImgVideo">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div>
+            <a href=""><img src="" alt="comment"></a>
+            <span id="comments">Comment</span>
+        </div>
+
+    </div>
+</body>
+
+</html>
