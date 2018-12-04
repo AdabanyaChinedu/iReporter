@@ -1,16 +1,35 @@
 {
-    "name": "UI",
+    "name": "api",
     "version": "1.0.0",
-    "description": "",
-    "main": "main.js",
+    "description": "an Api for iReporter app",
+    "main": "app.js",
     "scripts": {
+        "test": "echo hello world",
         "deploy": "gh-pages -d UI"
     },
-    "keywords": [],
-    "author": "",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AdabanyaChinedu/iReporter.git"
+    },
+    "keywords": [
+        "restApi",
+        "expressjs",
+        "nodejs"
+    ],
+    "author": "Adabanya Chinedu",
     "license": "ISC",
-    "homepage": "https://adabanyachinedu.github.io/iReporter",
     "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.4"
+    },
+    "devDependencies": {
+        "eslint": "^5.9.0",
+        "eslint-config-airbnb-base": "*",
+        "eslint-plugin-import": "*",
         "gh-pages": "^2.0.1"
-    }
+    },
+    "bugs": {
+        "url": "https://github.com/AdabanyaChinedu/iReporter/issues"
+    },
+    "homepage": "https://github.com/AdabanyaChinedu/iReporter#readme"
 }
